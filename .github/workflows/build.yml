@@ -48,5 +48,5 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push "${IMAGE_NAME}:latest"
-          docker push "${IMAGE_NAME}:${IMAGE_TAG}"
+          docker push $IMAGE_NAME:latest
+          docker push $IMAGE_NAME:$IMAGE_TAG
