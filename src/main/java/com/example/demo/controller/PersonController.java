@@ -11,9 +11,9 @@ public class PersonController {
         return "Person Controller - /";
     }
 
-    @GetMapping("/User")
+    @GetMapping("/user")
     public String user() {
-        return "User Controller - /";
+        return "User Controller - /user";
     }
 
 }
