@@ -13,7 +13,7 @@ public class PersonController {
 
     @GetMapping("/User")
     public String user() {
-        return "User Controller - /";
+        return "User Controller - /user";
     }
 
 }
