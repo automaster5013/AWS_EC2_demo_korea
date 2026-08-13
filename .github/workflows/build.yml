@@ -46,8 +46,6 @@ jobs:
       - name: Build Docker image
         run: docker build -t $IMAGE_NAME:lastest -t $IMAGE_NAME:$IMAGE_TAG .
 
-      - name: Push Docker image
-        run: |
-          docker push "${IMAGE_NAME}:latest"
-          docker push "${IMAGE_NAME}:${IMAGE_TAG}"
-          docker tag "${IMAGE_NAME}:${IMAGE_TAG}" "${IMAGE_NAME}:latest"
+      - name: Build Docker image
+        run: docker build -t ${{ env.IMAGE_NAME }}:latest .
+
